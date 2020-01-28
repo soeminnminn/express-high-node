@@ -1,0 +1,45 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(content='IE=edge', http-equiv='X-UA-Compatible')
+    meta(content='width=device-width,initial-scale=1', name='viewport')
+    title= title
+    link(rel="shortcut icon", href="/favicon.ico")
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/fontawesome-all.min.css')
+    link(rel='stylesheet', href='/css/signin.css')
+    script(src='/js/jquery-3.3.1.min.js')
+    script(src='/js/bootstrap.min.js')
+    
+  body
+    // Main Content
+    div.container.container-main(role="main")
+      div.limiter
+        div.container-login100
+          div.wrap-login100.p-l-55.p-r-55.p-t-65.p-b-50
+            form.login100-form.validate-form(action="?" method='post' role="form")
+              input#csrf(type="hidden", name="_csrf", value=csrfToken)
+              input(type="hidden", name="url", value=url)
+              span.login100-form-title.p-b-33 Account Login
+              div.wrap-alert!= message
+              div.wrap-input100
+                input.input100(name="username", type="text", placeholder="User Name or Email", required, autofocus)
+                span.focus-input100-1
+                span.focus-input100-2
+              div.wrap-input100.rs1
+                input.input100(name="password", type="password", placeholder="Password", required)
+                span.focus-input100-1
+                span.focus-input100-2
+              div.checkbox
+                label
+                  input(name="remember", type="checkbox", value="1")
+                  | Remember me
+              div.container-login100-form-btn.m-t-20
+                button.login100-form-btn Sign in
+            div.text-center.p-t-36.p-b-4
+              span.txt1 Forgot 
+              a.txt2.hov1(href="/forgetpwd") Username / Password?
+            div.text-center
+              span.txt1 Create an account? 
+              a.txt2.hov1(href="/register") Sign up

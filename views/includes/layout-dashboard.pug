@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    meta(charset='utf-8')
+    meta(content='IE=edge', http-equiv='X-UA-Compatible')
+    meta(content='width=device-width,initial-scale=1', name='viewport')
+    title= title
+    link(rel="shortcut icon", href="/favicon.ico")
+    link(rel='stylesheet', href='/css/bootstrap.min.css')
+    link(rel='stylesheet', href='/css/fontawesome-all.min.css')
+    link(rel='stylesheet', href='/css/dashboard.css')
+
+    script(src='/js/jquery-3.3.1.min.js')
+    script(src='/js/popper.min.js')
+    script(src='/js/bootstrap.min.js')
+    script(src='/js/jquery.template.js')
+    script(src='/js/bootstrap-pager.js')
+    script(src='/js/script.js')
+    
+  body
+    include nav-dashboard
+    // Main Content
+    div.container-fluid
+      div.row
+        include sidebar-dashboard
+        div.col-md-9.ml-sm-auto.col-lg-10.px-4.border-bottom(role="main")
+          block content

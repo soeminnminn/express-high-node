@@ -1,0 +1,106 @@
+extends ../includes/layout-landing
+
+block content
+  input(name="_csrf",type="hidden", value=csrfToken)
+  // Header
+  a(name="about")
+  div.intro-header
+    div.container
+      div.row
+        div.col-lg-12
+          div.intro-message
+            h1 Landing Page
+            h3 A Template by Start Bootstrap
+            hr.intro-divider
+            ul.list-inline.intro-social-buttons
+              li
+                a.btn.btn-light.btn-lg(href="#")
+                  i.fab.fa-twitter.fa-fw
+                  span.network-name
+                  | Twitter
+              li
+                a.btn.btn-light.btn-lg(href="#")
+                  i.fab.fa-github.fa-fw
+                  span.network-name
+                  | Github
+              li
+                a.btn.btn-light.btn-lg(href="#")
+                  i.fab.fa-linkedin.fa-fw
+                  span.network-name
+                  | Linkedin
+  // Page Content
+  a(name="services")
+  div.content-section-a
+    div.container
+      div.row
+        div.col-lg-5.col-sm-6
+          hr.section-heading-spacer
+          div.clearfix
+          h2.section-heading Death to the Stock Photo:<br>Special Thanks
+          p.lead A special thanks to <a target="_blank" href="http://join.deathtothestockphoto.com/">Death to the Stock Photo</a> for providing the photographs that you see in this template. Visit their website to become a member.
+        div.col-lg-5.col-lg-offset-2.col-sm-6
+          img.img-responsive(src="img/ipad.png", alt="")
+
+  div.content-section-b
+    div.container
+      div.row
+        div.col-lg-5.col-lg-offset-1.col-sm-push-6.col-sm-6
+          hr.section-heading-spacer
+          div.clearfix
+          h2.section-heading 3D Device Mockups<br>by PSDCovers
+          p.lead Turn your 2D designs into high quality, 3D product shots in seconds using free Photoshop actions by <a target="_blank" href="http://www.psdcovers.com/">PSDCovers</a>! Visit their website to download some of their awesome, free photoshop actions!
+        div.col-lg-5.col-sm-pull-6.col-sm-6
+          img.img-responsive(src="img/dog.png", alt="")
+  div.content-section-a
+    div.container
+      div.row
+        div.col-lg-5.col-sm-6
+          hr.section-heading-spacer
+          div.clearfix
+          h2.section-heading Google Web Fonts and<br>Font Awesome Icons
+          p.lead This template features the 'Lato' font, part of the <a target="_blank" href="http://www.google.com/fonts">Google Web Font library</a>, as well as <a target="_blank" href="http://fontawesome.io">icons from Font Awesome</a>.
+        div.col-lg-5.col-lg-offset-2.col-sm-6
+          img.img-responsive(src="img/phones.png", alt="")
+            
+  a(name="contact")
+  div.banner
+    div.container
+      div.row
+        div.col-lg-6
+          h2 Connect to Start Bootstrap:
+        div.col-lg-6
+          ul.list-inline.banner-social-buttons
+            li
+              a.btn.btn-light.btn-lg(href="#")
+                i.fab.fa-twitter.fa-fw
+                span.network-name
+                | Twitter
+            li
+              a.btn.btn-light.btn-lg(href="#")
+                i.fab.fa-github.fa-fw
+                span.network-name
+                | Github
+            li
+              a.btn.btn-light.btn-lg(href="#")
+                i.fab.fa-linkedin.fa-fw
+                span.network-name
+                | Linkedin
+  // Footer
+  footer
+    div.container
+      div.row
+        div.col-lg-12
+          ul.list-inline
+            li
+              a(href="#") Home
+            li.footer-menu-divider &sdot;
+            li
+              a(href="#about") About
+            li.footer-menu-divider &sdot;
+            li
+              a(href="#services") Services
+            li.footer-menu-divider &sdot;
+            li
+              a(href="#contact") Contact
+          p.copyright.text-muted.small Copyright &copy; Your Company 2014. All Rights Reserved
+        

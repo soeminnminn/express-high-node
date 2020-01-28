@@ -1,0 +1,26 @@
+{
+  "name": "express-high-node",
+  "version": "1.0.0",
+  "description": "Template",
+  "scripts": {
+    "start": "node ./bin/www",
+    "test": "mocha --exit"
+  },
+  "keywords": [
+    "graphql"
+  ],
+  "author": "SMM",
+  "license": "ISC",
+  "dependencies": {
+    "cookie-parser": "^1.4.4",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "express-session": "^1.16.2",
+    "passport": "^0.4.0",
+    "passport-local": "^1.0.0",
+    "pug": "^2.0.4"
+  },
+  "devDependencies": {
+    "mocha": "^6.2.0"
+  }
+}

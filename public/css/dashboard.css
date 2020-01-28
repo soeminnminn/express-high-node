@@ -1,0 +1,220 @@
+
+body {
+  font-size: .875rem;
+}
+/*
+ * Sidebar
+ */
+
+.sidebar {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 100; /* Behind the navbar */
+  padding: 48px 0 0; /* Height of navbar */
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
+}
+.sidebar-sticky {
+  position: relative;
+  top: 0;
+  height: calc(100vh - 48px);
+  padding-top: 0.25rem;
+  overflow-x: hidden;
+  overflow-y: auto;  /*Scrollable contents if viewport is shorter than content. */
+}
+@supports ((position: -webkit-sticky) or (position: sticky)) {
+  .sidebar-sticky {
+    position: -webkit-sticky;
+    position: sticky;
+  }
+}
+.sidebar-heading {
+  position: relative;
+  font-size: .75rem;
+  padding: .75em 1em;
+  margin-bottom: 0em;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e7e7e7;
+}
+.sidebar ul {
+  float: left;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+}
+.sidebar li {
+  position: relative;
+  display: block;
+  float: left;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  border: 0;
+  border-bottom: 1px solid #e7e7e7;
+}
+.sidebar li.nav-group-item {
+  border-bottom: 0;
+}
+.sidebar li.active a {
+  color: #fff;
+  background-color: #337ab7;
+}
+.sidebar li > a {
+  position: relative;
+  display: block;
+  padding: 15px 15px;
+  line-height: 20px;
+  color: #777;
+  text-decoration: none;
+}
+.sidebar li > a.sidebar-heading {
+  padding: 15px 0 8px 15px;
+}
+.sidebar a .fa {
+  margin: 0 16px 0 4px;
+  font-size: 1.25rem;
+}
+a.sidebar-heading .fa {
+  margin-top: -4px;
+}
+a.sidebar-heading h6 {
+  font-size: 100%;
+}
+.sidebar .sidebar-group > ul {
+  background-color: #f3f3f3;
+  border-right: 1px solid #e7e7e7;
+}
+
+.nav-item.dropdown .nav-link {
+  padding: .5em 1em;
+}
+
+/*
+ * Content
+ */
+
+[role="main"] {
+  padding-top: 60px; /* Space for fixed navbar */
+}
+
+@media (max-width: 720px){
+  .navbar-toggler {
+    border: 0;
+    padding: .1em;
+  }
+  .sidebar {
+    width: 250px;
+  }
+  .sidebar-show {
+    animation: slidein .5s 1;
+    -webkit-animation: slidein .5s 1;
+  }
+  .sidebar-hide {
+    animation: slideout .5s 1;
+    -webkit-animation: slideout .5s 1;
+    left: -300px;
+  }
+
+  .dropdown-menu-right {
+    position: absolute !important;
+    right: 0;
+    left: auto;
+  }
+}
+
+/*
+ * Navbar
+ */
+.navbar-brand {
+  padding-top: .15rem;
+  padding-bottom: .15rem;
+  font-size: 1rem;
+  box-shadow: inset -1px 0 0 rgba(0, 0, 0, .25);
+}
+
+.navbar .form-control {
+  padding: .75rem 1rem;
+  border-width: 0;
+  border-radius: 0;
+}
+
+.form-control-dark {
+  color: #fff;
+  background-color: rgba(255, 255, 255, .1);
+  border-color: rgba(255, 255, 255, .1);
+}
+
+.form-control-dark:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(255, 255, 255, .25);
+}
+
+/* Slide in animation */
+@-moz-keyframes slidein {
+  0% { left: -300px; }
+  100% { left: 0px; }
+}
+@-webkit-keyframes slidein {
+  0% { left: -300px; }
+  100% { left: 0px; }
+}
+@keyframes slidein {
+  0% { left: -300px; }
+  100% { left: 0px; }
+}
+@-moz-keyframes slideout {
+  0% { left: 0; }
+  100% { left: -300px; }
+}
+@-webkit-keyframes slideout {
+  0% { left: 0; }
+  100% { left: -300px; }
+}
+@keyframes slideout {
+  0% { left: 0; }
+  100% { left: -300px; }
+}
+
+/*
+ * Main content
+ */
+
+.main {
+  padding: 20px;
+}
+
+@media (min-width: 768px) {
+  .main {
+    margin-left: 10px;
+    padding-right: 20px;
+    padding-left: 20px;
+  }
+}
+
+.main .page-header {
+  margin-top: 0;
+}
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.placeholders h4 {
+  margin-bottom: 0;
+}
+
+.placeholder {
+  margin-bottom: 20px;
+}
+
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}

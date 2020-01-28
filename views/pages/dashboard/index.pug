@@ -1,0 +1,30 @@
+extends ../../includes/layout-dashboard
+
+block content
+  h1.page-header Dashboard
+  div#place-dashboard.row.placeholders
+    div.col-xs-6.col-sm-3.placeholder
+      img(src="data:image/gif;base64,R0lGODlhAQABAIAAAHd3dwAAACH5BAAAAAAALAAAAAABAAEAAAICRAEAOw==" width="200" height="200" class="img-responsive" alt="Generic placeholder thumbnail")
+      h4 Label
+      span.text-muted Something else
+      
+  h2.sub-header Section title
+  div.table-responsive
+    table#list-dashboard.table.table-striped
+      thead
+        tr
+          th #
+          th Header
+          th Header
+          th Header
+          th Header
+      tbody
+        tr
+          td ${= d1 }
+          td ${= d2 }
+          td ${= d3 }
+          td ${= d4 }
+          td ${= d5 }
+        
+  div.pager
+    nav#pager-dashboard(aria-label="Page navigation")

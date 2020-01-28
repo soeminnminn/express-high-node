@@ -1,0 +1,277 @@
+/*
+    Created on : Mar 5, 2018, 4:03:17 PM
+    Author     : smm
+*/
+body,
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+  font-size: 14px;
+}
+
+.p-l-55 {padding-left: 55px;}
+
+.p-r-55 {padding-right: 55px;}
+
+.p-t-36 {padding-top: 36px;}
+.p-t-65 {padding-top: 65px;}
+
+.p-b-4 {padding-bottom: 4px;}
+.p-b-33 {padding-bottom: 33px;}
+.p-b-50 {padding-bottom: 50px;}
+
+.m-t-20 {margin-top: 20px;}
+
+/*//////////////////////////////////////////////////////////////////
+[ login ]*/
+
+.limiter {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container-login100 {
+  width: 100%;
+  min-height: 60vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+}
+
+.wrap-login100 {
+  width: 500px;
+  background: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+     -moz-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+       -o-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+      -ms-box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 3px 20px 0px rgba(0, 0, 0, 0.1);
+}
+
+.login100-form {
+  width: 100%;
+}
+
+.login100-form-title {
+  display: block;
+  font-size: 30px;
+  color: #555555;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.wrap-input100 {
+  width: 100%;
+  position: relative;
+  background-color: #fff;
+  border: 1px solid #e6e6e6;
+}
+
+.wrap-input100.rs1 {
+  border-top: none;
+}
+
+.login100-form input {
+  outline: none;
+  border: none;
+}
+
+.login100-form .checkbox input {
+  margin-right: 8px;
+  margin-top: 8px;
+}
+
+.login100-form button {
+  outline: none !important;
+  border: none;
+}
+
+.login100-form button:hover {
+  cursor: pointer;
+}
+
+.input100 {
+  display: block;
+  width: 100%;
+  background: transparent;
+  font-family: OpenSans-Regular;
+  font-size: 15px;
+  color: #666666;
+  line-height: 1.2;
+}
+
+.login100-form input.input100 {
+  height: 48px;
+  padding: 0 15px 0 15px;
+}
+
+.login100-form .checkbox {
+  font-size: 14px;
+}
+
+.focus-input100-1,
+.focus-input100-2 {
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+}
+
+.focus-input100-1::before,
+.focus-input100-2::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 0;
+  height: 1px;
+  background-color: #4272d7;
+}
+
+.focus-input100-1::before {
+  top: -1px;
+  left: 0;
+}
+
+.focus-input100-2::before {
+  bottom: -1px;
+  right: 0;
+}
+
+.focus-input100-1::after,
+.focus-input100-2::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 1px;
+  height: 0;
+  background-color: #4272d7;
+}
+
+.focus-input100-1::after {
+  top: 0;
+  right: -1px;
+}
+
+.focus-input100-2::after {
+  bottom: 0;
+  left: -1px;
+}
+
+.input100:focus + .focus-input100-1::before {
+  -webkit-animation: full-w 0.2s linear 0s;
+  animation: full-w 0.2s linear 0s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+.input100:focus + .focus-input100-1::after {
+  -webkit-animation: full-h 0.1s linear 0.2s;
+  animation: full-h 0.1s linear 0.2s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+.input100:focus + .focus-input100-1 + .focus-input100-2::before {
+  -webkit-animation: full-w 0.2s linear 0.3s;
+  animation: full-w 0.2s linear 0.3s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+.input100:focus + .focus-input100-1 + .focus-input100-2::after {
+  -webkit-animation: full-h 0.1s linear 0.5s;
+  animation: full-h 0.1s linear 0.5s;
+  animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+}
+
+@keyframes full-w {
+  to {
+    width: calc(100% + 1px);
+  }
+}
+
+@keyframes full-h {
+  to {
+    height: calc(100% + 1px);
+  }
+}
+
+.container-login100-form-btn {
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.login100-form-btn {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 15px;
+  width: 100%;
+  height: 48px;
+  background-color: #2f1458;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+
+  -webkit-transition: all 0.4s;
+     -moz-transition: all 0.4s;
+       -o-transition: all 0.4s;
+          transition: all 0.4s;
+}
+
+.login100-form-btn:hover {
+  background-color: #333333;
+}
+
+.login100-form-btn.facebook {
+  text-transform: none;
+  background-color: #4C69BA;
+  background-image: linear-gradient(#4C69BA, #3B55A0);
+  line-height: 40pt;
+}
+
+.login100-form-btn.facebook:hover,
+.login100-form-btn.facebook:focus {
+  background-color: #5B7BD5;
+  background-image: linear-gradient(#5B7BD5, #4864B1);
+}
+
+.login100-form-btn.facebook::before {
+  content: "";
+  background: transparent url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 448 512'%3E%3Cpath fill='%23FFF' d='M448 56.7v398.5c0 13.7-11.1 24.7-24.7 24.7H309.1V306.5h58.2l8.7-67.6h-67v-43.2c0-19.6 5.4-32.9 33.5-32.9h35.8v-60.5c-6.2-.8-27.4-2.7-52.2-2.7-51.6 0-87 31.5-87 89.4v49.9h-58.4v67.6h58.4V480H24.7C11.1 480 0 468.9 0 455.3V56.7C0 43.1 11.1 32 24.7 32h398.5c13.7 0 24.8 11.1 24.8 24.7z'/%3E%3C/svg%3E") no-repeat 50% 50%;
+  display: block;
+  width: 33px;
+  height: 32px;
+  margin-right: 8px;
+  margin-bottom: 4px;
+}
+
+.login100-form-btn.facebook .fa {
+  font-size: 24pt;
+  margin-right: 8px;
+  display: none;
+}
+
+
+/*//////////////////////////////////////////////////////////////////*/

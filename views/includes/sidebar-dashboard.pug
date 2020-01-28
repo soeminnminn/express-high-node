@@ -1,0 +1,60 @@
+// Side Menu
+aside.col-md-2.d-md-block.bg-light.sidebar.sidebar-hide
+  div.sidebar-sticky
+    ul.nav.flex-column
+      li.nav-item.active
+        a.nav-link(href="#")
+          i.fa.fa-home 
+          | &nbsp; Dashboard
+          span.sr-only (current)
+      li.nav-item
+        a.nav-link(href="#")
+          i.fa.fa-file-alt
+          | &nbsp; Orders
+      li.nav-item
+        a.nav-link(href="#")
+          i.fa.fa-shopping-cart
+          | &nbsp; Products
+      li.nav-item
+        a.nav-link(href="#")
+          i.fa.fa-users
+          | &nbsp; Customers
+      li.nav-item
+        a.nav-link(href="#")
+          i.fa.fa-chart-bar
+          | &nbsp; Reports
+      li.nav-item
+        a.nav-link(href="#")
+          i.fa.fa-layer-group
+          | &nbsp; Integrations
+      // Sub menu
+      li.nav-group-item
+        a.sidebar-heading.d-flex.justify-content-between.align-items-center.text-muted(href="#", data-toggle="collapse", data-target="#subitems", aria-controls="navbarSupportedContent", aria-expanded="false")
+          h6.d-flex.justify-content-between.align-items-center.text-muted
+            span Saved reports
+          i.fa.fa-angle-down
+        div#subitems.sidebar-group.collapse.show
+          ul.nav.flex-column
+            li.nav-item
+              a.nav-link(href="#")
+                i.fa.fa-file-invoice
+                | &nbsp; Current month
+            li.nav-item
+              a.nav-link(href="#")
+                i.fa.fa-file-contract
+                | &nbsp; Last quarter
+            li.nav-item
+              a.nav-link(href="#")
+                i.fa.fa-file-archive
+                | &nbsp; Social engagement
+            li.nav-item
+              a.nav-link(href="#")
+                i.fa.fa-file-excel
+                | &nbsp; Year-end sale
+
+script.
+  $(document).ready(function(){
+    $("#nav-button").on("click",function(){
+      $(".sidebar").toggleClass('sidebar-show').toggleClass('sidebar-hide');
+    });
+  });
